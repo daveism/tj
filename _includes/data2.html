@@ -1,10 +1,4 @@
 <div>
 	<p>Test a div 2</p>
-	    <ul>
-        {% for p in site.pages %}
-        <li>
-        	<a {% if p.url == page.url %}class="active"{% endif %} href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a>
-        </li>
-        {% endfor %}
-    </ul>
+
 <div>
