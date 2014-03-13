@@ -5,5 +5,10 @@
         	<a {% if p.url == page.url %}class="active"{% endif %} href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a>
         </li>
         {% endfor %}
+ {% for p in site.extras.pages %}
+        <li>
+        	<a {% if p.url == page.url %}class="active"{% endif %} href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a>
+        </li>
+        {% endfor %}      
     </ul>
 </nav>
